@@ -1,67 +1,109 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Website: Max Larson">
+<link rel="shortcut icon" href="schroeder-icon.png"/>
 <title>Max Larson</title>
 <style>
-  body { margin: 10px 5% 10%; font-family: Georgia, serif; line-height: 1.35em; }
+  * {box-sizing: border-box; }
+  body {margin: 10px 5% 10%; font-family: Georgia, serif; line-height: 1.35em; }
   a { color: #800000; text-decoration: none; text-decoration-style: none; }
   a:hover { color: #cc6699; text-decoration: none; text-decoration-style: none; }
   h2 { font-family: Arial, sans-serif; color: #800000; margin: 1.75em 0 0 0; padding: 0 0 8px;
     padding-left: 2%; border-bottom: 3px dotted #800000; font-size: 25px; }
   cite { font-style: normal; }
-  ul { list-style: square; }
-  ul.bare { list-style-type: none; margin: 0; padding: 0; }
+  ul { list-style: square; color: #000000; }
+  ul.m { list-style-type: square; margin-top: -4px; }
+  ul.t { list-style-type: square; margin-left: -16px; margin-top: -12px; }
+  ul.bare { list-style-type: none; padding: 0; }
   ol > li { margin-bottom: 1.25em; }
-  img#header { border: 3px solid #800000; }
-  #info { float: right; margin-right: 2%; text-align: right; margin-top: 12px; }
-  #image { float: right; margin-right: 2%; }
-  #body { width: 85%; padding-top: 1px; margin: auto; }
+  img#header { border: 3px solid #800000; max-height: 99%; max-width: 99%; }
+  #info { float: right; margin-right: 0; text-align: right; margin-top: 12px;
+    padding: 0; display: block; max-height: 99%; max-width: 99%; }
+   #info2 { float: right; margin-right: 0; text-align: left; margin-top: 0px;
+    padding: 0; display: block; width: 50%; padding-left: 3px; padding-right: 3px; }
+  #image { float: right; margin-right: 0; font-family: Georgia, serif; font-size: 12px;
+     line-height: 15px; text-align: right; margin-left: 4px; }
+  #image2 { float: left; margin-right: 2%; padding-left: 0; font-family: Georgia, serif; font-size: 12px;
+     line-height: 15px; text-align: right; margin-bottom: 2px; }
+  #body { width: 90%; padding-top: 1px; margin: auto; }
+  .flat { width: 90%; padding-left: 4% }
+  .accordion {cursor: pointer; padding: 0; border: none; color: #800000; margin-left: 0;
+     text-align: left; outline: none; font-size: 17px; font-family: Georgia, serif; text-decoration: underline; }
+   .active, .accordion:hover {color: #cc6699; }
+  .panel {width: 95%; padding: 0; margin-left: none; margin-right:none; margin-top: 0; margin-bottom: 0;
+     font-size: 15px; overflow: hidden; transition: max-height 0.2s ease-out; max-height: 0; }
   .header {font-family: Arial, sans-serif; color: #800000; font-size: 25px; }
   div.clear { clear: both; }
   @media screen and (max-width: 480px) { .pix { display: none; } }
+  .column {float: left; }
+  .column.one {width: 14%; text-align: left; overflow: hidden; margin-right: 4% }
+  .column.two {width: 82%; text-align: left; margin-left: 0; padding-left: 4% }
+  .row:after {content: ""; display: table; clear: both; }
+  .row { margin-left: 4%; margin-top: 4px; }
+  #bold {font-weight: bold; margin-bottom: -2px; }
+ .due { color: #ff0000;  }
 </style>
 </head>
 <body>
 
 <div id="image">
-   <img src="smallmouse.jpg" id="header">
+   <img src="digit.png" id="header">
   </div>
-  
+
 <div id="info">
   <span class="header"><strong>Max Larson</strong></span><br>
-Doctoral Candidate<br>
+Postdoctoral Lecturer<br>
 Penn State University<br>
 English Department<br>
 mjl415@psu.edu<br>
-    <a href="https://www.twitter.com/loadedonloaded/" target="_blank">Twitter</a>
+<a href="https://www.twitter.com/loadedonloaded/" target="_blank">Twitter</a>
   </div>
 
 
 <div id="body" class="clear">
- <h2>Bio</h2>
-  <p>[Bio text here] [Bio text here] [Bio text here] [Bio text here] [Bio text here] [Bio text here] [Bio text here]
-  [Bio text here] [Bio text here] [Bio text here] [Bio text here] [Bio text here] [Bio text here] [Bio text here]
-  [Bio text here] [Bio text here] [Bio text here]</p>
-  
- <h2>Links</h2>
-  <p>[Links go here] [Links go here] [Links go here] [Links go here] [Links go here] [Links go here] [Links go here]
-    [Links go here] [Links go here]</p>
-  <p>[Another, different link here]</p>
+
+
+<h2>Bio</h2>
+
+
+	<p>[bio Text Here]</p>
+
+
+<h2>Writing</h2>
+ 	<p>Peer-Reviewed:</p>
+<ul><li><a href="https://muse.jhu.edu/article/716099/summary" target="_blank">"Optimizing Chess: Philology and Algorithmic Culture."</a> <i>Diacritics</i> 46.1 (2018) [published in 2019]: 30-53.</li>
+</ul>
+
+  <p>Non Peer-Reviewed:</p>
+
+
+
+
+<h2>Teaching</h2>
+<p>I have taught the following literature courses at Penn State:</p>
+
+	<ul><li><a href="engl191.html">Science Fiction (English 191)</a></li>
+	<li><a href="engl225n.html">Sexuality and Visual Culture (English 225N)</a></ul>
+
+
+
+
+
+
 
  </div>
-
-
 
 </body>
 
 
 <script type="text/javascript">
-var sc_project=11856791; 
-var sc_invisible=1; 
-var sc_security="b85a4154"; 
+var sc_project=11856791;
+var sc_invisible=1;
+var sc_security="b85a4154";
 </script>
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js"
@@ -72,5 +114,19 @@ target="_blank"><img class="statcounter"
 src="//c.statcounter.com/11856791/0/b85a4154/1/" alt="Web
 Analytics Made Easy - StatCounter"></a></div></noscript>
 
-<!--note for image hover-->
-  <!--img#header:hover { content: url('compmouse.jpg'); }-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = 1500 + "px";
+    }
+  });
+}
+</script>
